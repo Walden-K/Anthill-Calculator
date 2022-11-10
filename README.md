@@ -1,6 +1,4 @@
 # Anthill-Calculator
-Numerically computes the average number of steps for a two-dimensional random walk to reach a boundary.
-
 
 This is my solution to the anthill puzzle listed on many of Optiver's job openings. The puzzle is stated as follows:
 
