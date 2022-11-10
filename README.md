@@ -10,3 +10,5 @@ An ant leaves its anthill in order to forage for food. It moves with the speed o
 The program anthill_calculator.py answers part 3 of the question. For my full solution (and to understand what the program is actually doing), see the file anthill_puzzle_solution.pdf.
 
 My solution is based on the techniques found in Mikey Wright's master's thesis, 'Boundary Problems for One and Two Dimensional Random Walks'; in particular, chapter 4. Essentially, we assign a variable to each point on the interior representing the average number of steps required to reach the boundary starting from that point. The problem can then be fully encoded as a system of linear equations, which can be efficiently solved to give the average time required to hit the boundary from any starting position.
+
+You can play around with average times by editing the array 'boundary'. Just remember that it gets interpreted as a polygon, so be sure to list them in order (going clockwise or anti-clockwise).
