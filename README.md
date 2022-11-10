@@ -8,3 +8,5 @@ An ant leaves its anthill in order to forage for food. It moves with the speed o
 3. Can you write a program that comes up with an estimate of average time to find food for any closed boundary around the anthill? What would be the answer if food is located outside an defined by ( (x – 2.5cm) / 30cm )2 + ( (y – 2.5cm) / 40cm )2 < 1 in coordinate system where the anthill is located at (x = 0cm, y = 0cm)? Provide us with a solution rounded to the nearest integer.
 
 The program anthill_calculator.py answers part 3 of the question. For my full solution (and to understand what the program is actually doing), see the file anthill_puzzle_solution.pdf.
+
+My solution is based on the techniques found in Mikey Wright's master's thesis, 'Boundary Problems for One and Two Dimensional Random Walks'; in particular, chapter 4. Essentially, the problem can be fully encoded as a system of linear equations, which can then be efficiently solved to give the average time required to hit the boundary from any starting position.
